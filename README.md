@@ -1,4 +1,2 @@
-#Tutorial
-
-This is a tutorial where you will learn how to create Git
-repositories from your projects and share them on GitHub.
+# AI-big-model
+>>>>>>> 7fcf449545ec5794b01c1f5d71968815b12e1644
