@@ -201,7 +201,7 @@ it was the age of wisdom it was the age of foolishness.
 # 反转文件内容.按行读取文件内容, 对每行的内容进行反转后, 写到另1个文件中.
 # 例如:数据源文件: a.txt
 
-import os
+# import os
 
 # with open('a.txt','r',encoding='utf-8') as f_in,open('b.txt','w',encoding='utf-8') as f_out:
 #     while True:
@@ -230,13 +230,29 @@ import os
 #     data = f_in.read()
 #     f_out.write(data)
 
-import streamlit as st
+# import streamlit as st
 
-st.title('Streamlit教程')
+# st.title('Streamlit教程')
+#
+# "# 1级标题"
+# "## 2级标题"
+# "### 3级标题"
+# "#### 4级标题"
+# "##### 5级标题"
+# "###### 6级标题"
 
-"# 1级标题"
-"## 2级标题"
-"### 3级标题"
-"#### 4级标题"
-"##### 5级标题"
-"###### 6级标题"
+
+class Phone:
+    def open(self):
+        print('开机中......')
+
+    def close(self):
+        print('关机中......')
+
+    def take(self):
+        print('拍照中......')
+
+p = Phone()
+p.open()
+p.close()
+p.take()
