@@ -27,7 +27,11 @@ if prompt:
     response = ol.chat(model='qwen2:0.5b',
                            messages=[{'role': 'user', 'content': prompt}])
     # 把获取的反馈追加进缓存里
-    st.session_state['messages'].append({'role': 'user', 'content': prompt})
+    st.session_state['messages'].append({'role': response.message.role, 'content': response.message.content})
     # 申明用户类型，输出反馈内容
     with st.chat_message('assistant'):
         st.markdown(response.message.content)
+
+
+# 备注： 在命令行里输入 sreamlit run python脚本名.py 运行程序。
+# streamlit run .\黑马聊天机器人\聊天机器人.py
